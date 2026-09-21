@@ -119,6 +119,12 @@ and drops to 20% opacity below 1000px.
 
 ## Deployment
 
+Repository: `GTA-Cyber-Advocates/gta-cyber-site`, deliberately in its own GitHub
+organisation rather than under Vivat, so management of the guild can be handed over
+without untangling the repo from an unrelated org. Transferring a repository between
+orgs severs the Cloudflare Pages connection and it has to be reconnected by hand, so
+starting in the right place avoids that entirely.
+
 Cloudflare Pages, connected to this repository, building from the root with no build
 command. Custom domains `gta-cyber.org` added through the Pages **Custom domains** UI
 so Pages creates the DNS records itself. Never hand-build the CNAME; doing so without
