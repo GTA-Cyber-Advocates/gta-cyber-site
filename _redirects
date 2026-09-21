@@ -1,0 +1,14 @@
+/home            /               301
+/index.html      /               301
+/about.html      /about          301
+/focus-areas.html /focus-areas   301
+/events.html     /events         301
+/partners.html   /partners       301
+/get-involved.html /get-involved 301
+/security-policy.html /security-policy 301
+/contact         /get-involved   301
+/join            /get-involved   301
+/sponsors        /partners       301
+/sponsorship     /partners       301
+/security.txt    /.well-known/security.txt  301
+/README.md       /               301
