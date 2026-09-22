@@ -1,6 +1,6 @@
 # GTA Cyber
 
-> GTA Cyber is the cybersecurity guild of Global Tech Advocates. It is not a regional
+> GTA Cyber is the cybersecurity community of practice within Global Tech Advocates. It is not a regional
 > chapter or a vertical business line. It is a cross-cutting group that draws on
 > cybersecurity practitioners already inside GTA networks worldwide and makes that
 > expertise available across the whole organisation. Volunteer-led, independent and
@@ -14,11 +14,12 @@ Contact: info@gta-cyber.org
 
 ## The model
 
-GTA Cyber uses a guild structure rather than a vertical silo. Members keep their
-existing Global Tech Advocates network membership and their day jobs. The guild sits
-across those networks, so a security question raised in one city can be answered by a
-practitioner in another. People join because of the craft they practise rather than
-where they are based.
+GTA Cyber is a community of practice rather than a vertical silo: a cross-cutting
+group of subject matter experts who sit across business units, divisions and locations
+instead of inside any one of them. Members keep their existing Global Tech Advocates
+network membership and their day jobs. The community sits across those networks, so a
+security question raised in one city can be answered by a practitioner in another.
+People join because of the craft they practise rather than where they are based.
 
 Global Tech Advocates has more than 40,000 business leaders, experts and investors
 across 42 or more networks worldwide.
@@ -28,13 +29,13 @@ across 42 or more networks worldwide.
 - **Practitioner exchange**: a standing forum for security people across GTA networks
   to share what works, what failed and what is coming. Chatham House rules by default.
 - **Expertise on call**: when another GTA group, a member company or a policy
-  conversation needs a security view, the guild routes it to someone qualified.
+  conversation needs a security view, the community routes it to someone qualified.
 - **Raising the floor**: plain, vendor-neutral guidance for founders and operators at
   organisations with no security function, where most of the unaddressed risk sits.
 - **A voice in policy**: convening practitioner input on cybersecurity consultations,
   grounded in operational reality.
 
-## What the guild does not do
+## What the community does not do
 
 Certify or accredit anyone. Compete with its own members for work. Run an incident
 response service. Publish threat intelligence as a product.
@@ -54,7 +55,7 @@ Klarvant (https://klarvant.com/) is the founding title sponsor.
 
 Sponsorship tiers: title sponsor (held by Klarvant), programme partner, in-kind
 supporter. Sponsorship does not buy the membership list, editorial control, or
-guaranteed speaking slots. Guidance published by the guild is vendor-neutral,
+guaranteed speaking slots. Guidance published by the community is vendor-neutral,
 including in categories where sponsors compete.
 
 ## Security

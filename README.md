@@ -1,6 +1,7 @@
 # gta-cyber.org
 
-Static site for GTA Cyber, the cybersecurity guild of Global Tech Advocates.
+Static site for GTA Cyber, the cybersecurity community of practice within
+Global Tech Advocates.
 Plain HTML and CSS, no build step, no framework, no third-party requests.
 
 Live: https://gta-cyber.org
@@ -11,8 +12,8 @@ LinkedIn: https://www.linkedin.com/company/gta-cyber
 
 ```
 ├── index.html            Home
-├── about.html            The guild model
-├── focus-areas.html      What the guild works on, and what it will not do
+├── about.html            The model, and the member grid
+├── focus-areas.html      What the community works on, and what it will not do
 ├── events.html           Programme and rhythm
 ├── partners.html         Sponsorship tiers and terms
 ├── get-involved.html     Enquiry form
@@ -109,6 +110,38 @@ JS, so deploys take hours to reach returning visitors.
 managed `robots.txt` (AI Crawl Control → Signals), Block AI bots, Bot Fight Mode, AI
 Labyrinth, and email address obfuscation. Verify by diffing a live page against the
 repo file; they should be byte-identical.
+
+## Terminology
+
+The site says **community of practice**, never "guild". Spotify's model uses squads,
+tribes, chapters and guilds, and its guild is defined as a voluntary cross-tribe
+*community of practice*. Community of practice is the business-generic term for the
+same thing: a group of subject matter experts organised around a craft, sitting across
+business units, divisions and locations rather than inside any one of them.
+
+It is deliberately **not** a Centre of Excellence. A CoE is formal, funded, top-down
+and carries structural authority. GTA Cyber is volunteer-led, unfunded in headcount
+terms, and practitioner-driven, which is a community of practice by definition. Using
+CoE language would promise governance the group does not have.
+
+"Working group" was also avoided: GTA already runs 42 of them, and the distinction
+would confuse rather than clarify.
+
+## Member cards
+
+`.member` cards on `/about#members` are square, photo-filled links. Name and role sit
+in a permanent gradient bar; the short profile fades in on hover **and on keyboard
+focus**, so it is not mouse-only. On touch devices the bio is hidden entirely via
+`@media(hover:none)` and the card behaves as a plain link to the person's profile,
+because a hover-only reveal is unreachable there.
+
+The last cell is a dashed "Your name here" join card. It keeps a thin grid from looking
+sparse while membership is small, and doubles as a recruitment prompt. Remove it once
+there are enough members to fill a row or two.
+
+Portraits are 640x640 square crops, centre-weighted and biased upward so the face sits
+on the upper third. Run any new portrait through the same treatment or it will look
+pasted in.
 
 ## The hero motif
 
