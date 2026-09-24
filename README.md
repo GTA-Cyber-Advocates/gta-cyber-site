@@ -136,17 +136,41 @@ group is no longer new**, or it starts reading as an excuse rather than an invit
 
 ## Focus areas
 
-Four subjects, set in September 2026: orchestrated digital governance; the convergence
-of AI and cybersecurity; data sovereignty viewed through a security lens; and the grey
-digital divide, which is the philanthropic strand.
+Four subjects, revised September 2026:
+
+1. **Post-quantum readiness** (leads, and is the only one with fixed dates)
+2. Orchestrated digital governance
+3. The convergence of AI and cybersecurity
+4. Data sovereignty, viewed through a security lens
+
+A philanthropic strand on the grey digital divide was drafted and then dropped. If it
+returns, the argument was that digital exclusion and fraud victimisation reinforce each
+other, which makes inclusion a security problem rather than charity.
 
 Practitioner exchange and expertise on call are **not** focus areas. They are standing
-mechanisms, and they live in a separate "How we work" section further down the page.
-Conflating the two was the previous version's mistake.
+mechanisms and live in a separate "How we work" section. Conflating the two was an
+earlier version's mistake.
 
-No statistics appear in the grey digital divide copy. Figures on older-adult fraud
-losses and digital exclusion exist and are compelling, but a cybersecurity group
-publishing an uncited number is a bad look. Add them with a source, or not at all.
+### Checking the PQC copy before you edit it
+
+This is the one page where stale facts would be embarrassing, because the audience are
+practitioners. Two things were verified at the time of writing and should be re-checked
+if the copy is revised:
+
+- NIST finalised the post-quantum standards in **August 2024**: ML-KEM (FIPS 203) for
+  key establishment, ML-DSA (FIPS 204) and SLH-DSA (FIPS 205) for signatures.
+- Migration deadlines have been **brought forward**, not pushed back. Do not publish a
+  specific year without re-confirming it, and be careful about presenting a single
+  jurisdiction's deadline as if it were global: the audience is international.
+
+The copy deliberately avoids quoting one country's dates for that reason.
+
+## Events
+
+The first session is a **webinar on post-quantum readiness, early December 2026**, with
+date, speakers and registration to be announced. It appears in three places that must be
+kept in step: the launch banner on the home page, the "Our first session" block on
+`/events`, and `llms.txt`. Update all three, or the site contradicts itself.
 
 ## The hero motif
 
