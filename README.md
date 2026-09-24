@@ -47,8 +47,21 @@ LinkedIn: https://www.linkedin.com/company/gta-cyber
 ```
 
 That line exists only so the temporary `*.pages.dev` address stays out of search
-results. **Delete it the moment `gta-cyber.org` is attached**, or the real site will
-never be indexed and nobody will notice for months.
+results. **Delete it when `gta-cyber.org` is attached**, or the real site will never be
+indexed and nobody will notice for months.
+
+**But not before `COMMITMENTS.md` is signed off.** The site publishes specific promises
+to sponsors, members and form submitters, none of which came from a brief and none of
+which anyone has agreed. They were written to make the copy persuasive. While the
+noindex is in place they are a draft; the moment it comes off they are published
+positions of an organisation that never agreed them. `COMMITMENTS.md` lists every one
+with its exact location and who needs to sign it. Clear that first, then the noindex.
+
+
+**There is no agreement with Klarvant in writing.** Section A of `COMMITMENTS.md`
+publishes contract terms (annual, no lock-in, no member list, no guaranteed speaking
+slots) for a relationship that exists informally. Treat those as the highest-risk copy
+on the site.
 
 
 **The contact form has no endpoint.** `get-involved.html` posts to
