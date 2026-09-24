@@ -7,7 +7,6 @@
 > not-for-profit.
 
 Parent organisation: Global Tech Advocates, https://www.globaltechadvocates.org/
-Managed by: Vivat Group, https://vivatgroup.net/
 Website: https://gta-cyber.org/
 LinkedIn: https://www.linkedin.com/company/gta-cyber
 Contact: info@gta-cyber.org
@@ -26,14 +25,30 @@ across 42 or more networks worldwide.
 
 ## Focus areas
 
+- **Orchestrated digital governance**: the gap between discovering a digital estate and
+  actually governing it. One picture that security, GRC, legal and brand can act on at
+  once, with an owner, a deadline and an audit trail for every asset and finding.
+- **The convergence of AI and cybersecurity**: two distinct problems routinely discussed
+  as one. Securing AI systems (model supply chain, prompt handling, data leakage, agency)
+  and using AI in security (whether output can be trusted enough to act on).
+- **Data sovereignty, viewed through a security lens**: beyond jurisdiction and contract
+  terms, where data physically sits including backups, logs and unmapped fourth parties;
+  which keys exist and who holds them; what technically happens when a provider is
+  compelled to disclose.
+- **The grey digital divide**: the philanthropic strand. Essential services went digital
+  by default, making digital access a precondition for banking, healthcare and government.
+  Older people are the group most likely to be excluded and among the most targeted by
+  fraud once online. Exclusion and victimisation reinforce each other; the remedy is
+  inclusion, not warning people off the internet.
+
+## How the community works
+
+Two standing mechanisms, distinct from the subjects above:
+
 - **Practitioner exchange**: a standing forum for security people across GTA networks
   to share what works, what failed and what is coming. Chatham House rules by default.
 - **Expertise on call**: when another GTA group, a member company or a policy
   conversation needs a security view, the community routes it to someone qualified.
-- **Raising the floor**: plain, vendor-neutral guidance for founders and operators at
-  organisations with no security function, where most of the unaddressed risk sits.
-- **A voice in policy**: convening practitioner input on cybersecurity consultations,
-  grounded in operational reality.
 
 ## What the community does not do
 

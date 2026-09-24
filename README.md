@@ -12,8 +12,8 @@ LinkedIn: https://www.linkedin.com/company/gta-cyber
 
 ```
 ├── index.html            Home
-├── about.html            The model, and the member grid
-├── focus-areas.html      What the community works on, and what it will not do
+├── about.html            The model and principles
+├── focus-areas.html      Four subjects, two mechanisms, and what it will not do
 ├── events.html           Programme and rhythm
 ├── partners.html         Sponsorship tiers and terms
 ├── get-involved.html     Enquiry form
@@ -127,21 +127,26 @@ CoE language would promise governance the group does not have.
 "Working group" was also avoided: GTA already runs 42 of them, and the distinction
 would confuse rather than clarify.
 
-## Member cards
+## Launch banner
 
-`.member` cards on `/about#members` are square, photo-filled links. Name and role sit
-in a permanent gradient bar; the short profile fades in on hover **and on keyboard
-focus**, so it is not mouse-only. On touch devices the bio is hidden entirely via
-`@media(hover:none)` and the card behaves as a plain link to the person's profile,
-because a hover-only reveal is unreachable there.
+The yellow strip above the hero on the home page (`.launch`) announces that the group
+is newly established. It exists for two reasons: it is genuine news, and it reframes
+the thin sponsor and member lists as "early" rather than "empty". **Remove it once the
+group is no longer new**, or it starts reading as an excuse rather than an invitation.
 
-The last cell is a dashed "Your name here" join card. It keeps a thin grid from looking
-sparse while membership is small, and doubles as a recruitment prompt. Remove it once
-there are enough members to fill a row or two.
+## Focus areas
 
-Portraits are 640x640 square crops, centre-weighted and biased upward so the face sits
-on the upper third. Run any new portrait through the same treatment or it will look
-pasted in.
+Four subjects, set in September 2026: orchestrated digital governance; the convergence
+of AI and cybersecurity; data sovereignty viewed through a security lens; and the grey
+digital divide, which is the philanthropic strand.
+
+Practitioner exchange and expertise on call are **not** focus areas. They are standing
+mechanisms, and they live in a separate "How we work" section further down the page.
+Conflating the two was the previous version's mistake.
+
+No statistics appear in the grey digital divide copy. Figures on older-adult fraud
+losses and digital exclusion exist and are compelling, but a cybersecurity group
+publishing an uncited number is a bad look. Add them with a source, or not at all.
 
 ## The hero motif
 
