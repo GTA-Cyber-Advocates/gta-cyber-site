@@ -198,4 +198,4 @@ Cloudflare redirect rule. It serves no content and sends no mail.
 ## Attribution
 
 Logo artwork supplied by Global Tech Advocates. The Klarvant wordmark is used with
-permission as founding title sponsor, taken from their published brand assets.
+permission as title sponsor, taken from their published brand assets.
