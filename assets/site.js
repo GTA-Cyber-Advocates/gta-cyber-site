@@ -49,6 +49,25 @@
     });
   });
 
+  var spyLinks = [].slice.call(document.querySelectorAll('.nav__links a[href^="#"]'));
+  if (spyLinks.length && 'IntersectionObserver' in window) {
+    var byId = {};
+    var targets = [];
+    spyLinks.forEach(function (a) {
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) { byId[el.id] = a; targets.push(el); }
+    });
+    var visible = {};
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+      var current = null;
+      targets.forEach(function (el) { if (visible[el.id] && !current) current = el.id; });
+      spyLinks.forEach(function (a) { a.removeAttribute('aria-current'); });
+      if (current && byId[current]) byId[current].setAttribute('aria-current', 'true');
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    targets.forEach(function (el) { spy.observe(el); });
+  }
+
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!reduce && 'IntersectionObserver' in window) {

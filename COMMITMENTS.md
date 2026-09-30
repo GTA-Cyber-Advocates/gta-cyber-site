@@ -84,28 +84,54 @@ norm and is being repeated rather than invented.
 
 | # | The claim as published | Where | Marked |
 |---|---|---|---|
-| C1 | "We do not add anyone to a mailing list without asking, and **we do not pass details to sponsors**." | `get-involved.html:144` | |
+| ~~C1~~ | ~~"We do not add anyone to a mailing list without asking, and we do not pass details to sponsors."~~ **Struck and replaced.** | `get-involved.html` | **Resolved** |
+| C2 | "We keep a GTA Cyber register, separate from other Global Tech Advocates lists. What you send may be used in accordance with the Global Tech Advocates privacy policy." | `get-involved.html:144` | |
+
+**C1 is resolved.** It was an invented promise made by an entity with no privacy policy.
+It has been replaced with the pattern GTA Innovation Funding uses: point at the central
+Global Tech Advocates privacy policy, and state that this group's register is kept
+separate from other GTA lists. That is the parent organisation's own approach, so it
+needs no separate sign-off from anyone here, and it stops the site inventing data policy.
+
+**C2 still needs one confirmation**, and it is a small one: that a GTA Cyber register
+genuinely will be kept separate from other GTA lists, and that whoever receives the
+enquiries knows the central privacy policy is the one being pointed at. If GTA central
+would rather these went onto a shared list, the sentence needs to say so instead.
 
 The form collects name, email, organisation, GTA network, area of interest and free
-text. That is identifiable information about named security practitioners at named
-employers.
-
-C1 is a privacy representation made by an entity with no privacy policy, about a form
-with no agreed destination and no decided retention period. It is also currently
-inaccurate in spirit: the form posts to a third-party processor (Formspree, endpoint not
-yet created) which stores submissions on its own infrastructure.
-
-Three things need deciding together, and the wording follows from them, not the other
-way round:
-
-1. Where submissions go, and who can read them.
-2. How long they are kept.
-3. Whether a privacy notice is needed at all, which depends on 1 and 2.
-
-Until then C1 should either be removed or narrowed to something demonstrably true, such
-as naming the processor.
+text: identifiable information about named security practitioners at named employers.
+That is why the destination matters more here than on a normal contact form, and why
+the form backend is still an open decision. As it stands the form posts to a
+third-party processor (Formspree, endpoint not yet created) which would store those
+submissions on its own infrastructure.
 
 ---
+
+## D. A named individual — needs Luis, and nobody else
+
+The members grid on the home page publishes a real person's photograph, career history
+and LinkedIn link. That is personal data about an identifiable individual, put on a
+public website, so it belongs in this file even though it is the least contentious item
+in it.
+
+| # | The claim as published | Where | Marked |
+|---|---|---|---|
+| D1 | Photograph of Luis Novella, self-hosted at `assets/people/luis-novella.jpg` | `index.html` | |
+| D2 | "Thirty years across energy, cybersecurity, insurance, FinTech and consulting... Senior roles at KPMG, Accenture, The Hackett Group and Areva. Chartered Director and FIoD." | `index.html` | |
+| D3 | The role label **"Founding member"** | `index.html` | |
+| D4 | Link to his personal LinkedIn profile | `index.html` | |
+
+**D1 needs to be his to give.** The image came from his LinkedIn profile. If a
+photographer holds the copyright, LinkedIn's terms do not transfer a licence to us.
+Easiest fix if in doubt: ask him to send the file he wants used.
+
+**D3 is a different kind of claim from the Klarvant one.** "Founding title sponsor" was
+struck because it described contract terms nobody had agreed. "Founding member" is a
+statement of fact about who was there at the start, and if that is true it can stay. It
+is worth a moment's thought only because he is currently the *only* named member, which
+makes the label carry more weight than it would in a list of ten.
+
+**Nothing here needs GTA central.** This one is a conversation with one person.
 
 ## What to do with each outcome
 
@@ -130,6 +156,7 @@ and someone has agreed to enforce it.
 | A. Sponsor terms | | | |
 | B. Governance | | | |
 | C. Data handling | | | |
+| D. Luis Novella's details | | | |
 
 Once all three are signed, delete the `X-Robots-Tag: noindex` block from `_headers` and
 this gate is cleared.

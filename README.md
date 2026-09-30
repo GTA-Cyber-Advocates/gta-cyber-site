@@ -126,19 +126,111 @@ repo file; they should be byte-identical.
 
 ## Terminology
 
-The site says **community of practice**, never "guild". Spotify's model uses squads,
-tribes, chapters and guilds, and its guild is defined as a voluntary cross-tribe
-*community of practice*. Community of practice is the business-generic term for the
-same thing: a group of subject matter experts organised around a craft, sitting across
-business units, divisions and locations rather than inside any one of them.
+The site says **working group**, never "guild" and no longer "community of practice".
 
-It is deliberately **not** a Centre of Excellence. A CoE is formal, funded, top-down
-and carries structural authority. GTA Cyber is volunteer-led, unfunded in headcount
-terms, and practitioner-driven, which is a community of practice by definition. Using
-CoE language would promise governance the group does not have.
+Working group is GTA's own word. The parent site states GTA runs more than 42 working
+groups, and sibling sites brand themselves "A Global Tech Advocates working group" in
+the eyebrow, the logo lockup and the footer. Conforming to the parent organisation's
+language matters more here than terminological precision, because the audience already
+knows what a GTA working group is.
 
-"Working group" was also avoided: GTA already runs 42 of them, and the distinction
-would confuse rather than clarify.
+An earlier version used **community of practice** and the README argued that "working
+group" should be avoided because GTA already runs 42 of them. That reasoning was
+backwards: being one of the 42 is the point. The substance was kept, though. Most GTA
+working groups are organised around a place or a sector; this one is organised around a
+discipline, which is why it runs across the others rather than beside them. That
+sentence is the load-bearing idea and should survive any future renaming.
+
+It is deliberately **not** a Centre of Excellence. A CoE is formal, funded, top-down and
+carries structural authority. GTA Cyber is volunteer-led, unfunded in headcount terms
+and practitioner-driven, so CoE language would promise governance the group does not
+have.
+
+## Homepage structure
+
+The home page is a **long scroll narrative**, matching the pattern used by sibling GTA
+working group sites such as gtainnovationfunding.org. It tells the whole story in one
+pass: hero, sponsor, stats, about, the model, focus areas, how we work, what we will not
+do, events, partners, ways in, FAQ.
+
+**The deep pages still exist and are still canonical for their own subject.** This is
+deliberate and is the one thing not to undo. The reference site is a single page with
+nothing behind it, which gives it one URL, one title and one meta description for all of
+its content. Ours keeps `/focus-areas`, `/events`, `/partners`, `/about` and
+`/get-involved` as separate indexable pages, so someone searching for post-quantum
+readiness can land on the page about it. The home page summarises; the deep pages are
+the detail, and each summary block ends with a link through to its page.
+
+**The home page must never quote the deep pages verbatim.** This is the rule that keeps
+the structure honest, and it was broken on the first attempt: 22 sentences appeared
+word-for-word in both places. Two things go wrong when that happens. The copies drift, so
+the site ends up contradicting itself; and the home page competes with the deep page for
+the same queries, which the home page wins on authority, suppressing the page that
+actually holds the detail. Every home page block is now a teaser written in its own
+words, ending in a link through. Measured overlap is zero sentences. Re-check it after
+any edit:
+
+```
+python3 - <<'EOF'
+import re
+def s(f):
+    t=open(f).read(); t=re.sub(r'<(script|style|head)[^>]*>.*?</\1>',' ',t,flags=re.S)
+    t=re.sub(r'<[^>]+>',' ',t); t=re.sub(r'&[a-z]+;',"'",t)
+    return {x.strip() for x in re.split(r'(?<=[.!?])\s+',re.sub(r'\s+',' ',t)) if len(x.split())>6}
+h=s('index.html')
+for f in ['about.html','focus-areas.html','events.html','partners.html','get-involved.html']:
+    print(f, len(h & s(f)))
+EOF
+```
+
+**The primary nav points at anchors on the home page and at pages everywhere else.**
+`index.html` uses `#about`, `#focus`, `#events`, `#partners`, `#join`; every other page
+uses `/about`, `/focus-areas` and so on. If you add a nav item, change it in both forms.
+
+`site.js` runs a scrollspy that sets `aria-current` on the nav link for whichever
+section is in view, using IntersectionObserver with a `-45% 0px -50% 0px` root margin, so
+the highlight changes when a section reaches the middle of the viewport rather than the
+top. The static `aria-current="page"` was removed from Home on `index.html` only,
+because otherwise it competes with the scrollspy for the underline.
+
+**Reveal animations make full-page screenshots look broken.** Sections below the fold
+sit at `opacity:0` until IntersectionObserver fires, so a full-page capture shows them as
+blank bands. This is a capture artifact, not a fault. Scroll the page before judging it.
+
+## Members grid
+
+`#people` on the home page. Square cards: a photograph with a name bar, and a hover or
+focus state that swaps in a short bio. The last card is a dashed "Your name here" tile
+linking to the enquiry form, so a thin list reads as an invitation rather than an
+absence.
+
+**The grid uses `auto-fit`, not `auto-fill`.** With `auto-fill` and two cards you get a
+four-column grid with two empty tracks, which looks like something failed to load.
+`auto-fit` collapses the empty tracks, so two cards sit as a deliberate pair. It lives
+inside `.wrap--narrow`, which is what keeps those two cards at a sensible 355px rather
+than stretching them across the full width. Add members and it reflows to three across
+without any change.
+
+**Touch devices get a stacked card, not the hover overlay.** An earlier version simply
+hid the bio at `@media(hover:none)`, which meant every phone and tablet visitor saw a
+name and nothing else: the bio was unreachable, not just hidden. The media query now
+restacks the card so the photo, name, role and full bio all render in flow. Two traps if
+you edit it: `.person img` must get `height:auto` there, because the base `height:100%`
+resolves circularly once the card stops being a fixed square and the image paints over
+the text; and backgrounds must be set to `transparent` explicitly, since the base card is
+dark and the stacked version is white.
+
+**Headless browsers lie about `hover`.** Chromium's headless shell reported
+`(hover:none)` at desktop widths and `(hover:hover)` at 390px, so neither path can be
+tested by viewport alone. Test the touch layout with a context created using
+`has_touch=True, is_mobile=True`, and test the hover layout by checking computed styles
+after `page.hover()` rather than by screenshotting, since `element.screenshot()` scrolls
+and drops the hover state.
+
+Lowest contrast in this component is 7.59:1, against an AA requirement of 4.5.
+
+Publishing someone's photograph and career history is a commitment about a real person.
+See section D of `COMMITMENTS.md`.
 
 ## Launch banner
 
