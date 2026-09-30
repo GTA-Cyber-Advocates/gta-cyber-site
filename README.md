@@ -91,6 +91,38 @@ background with ink text on top, or a decorative rule.
 
 Lowest contrast anywhere on the site is 6.37:1, against an AA requirement of 4.5.
 
+### Dark surfaces are gradients, not flat ink
+
+Three tokens in `:root` drive every dark surface, so they read as one material rather
+than three separate blocks:
+
+| Token | Used by | Brightest stop |
+|---|---|---|
+| `--grad-hero` | `.hero` | `#283039` |
+| `--grad-band` | `.on-ink` (sponsor band, dark CTAs on deep pages) | `#232A32` |
+| `--grad-foot` | `.site-footer` | `#212830` |
+
+All three are radial glows anchored to the upper right, in a cool neutral blue-grey.
+The hero is the strongest; the band and footer are deliberately fainter, because they
+sit next to lighter sections and a strong glow there reads as a rendering fault rather
+than a design.
+
+**Change them together or not at all.** They are a family. A gradient hero above a flat
+charcoal footer looks like one of them failed to load.
+
+`background-color:var(--ink)` is kept alongside each `background-image` as a fallback,
+so anything that cannot render the gradient still gets the right dark surface and the
+contrast figures below still hold.
+
+Contrast at the brightest point of each surface, which is the worst case: white 13.36:1,
+body text 8.83:1, yellow eyebrow 9.28:1 on the hero, and higher on the other two.
+
+The cool tone was a deliberate choice against the warm ink of the rest of the palette.
+It was picked over a warm monochrome lift and a yellow-tinted glow. If it ever needs
+revisiting, the argument against it is that cool grey over warm near-black can read
+slightly muddy on uncalibrated screens, and that it sits closer to the palette other GTA
+group sites use.
+
 ## Canonical form
 
 The **apex is canonical**, matching the rest of the estate. There is no www variant in
