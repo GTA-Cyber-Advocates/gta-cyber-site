@@ -115,8 +115,8 @@ in it.
 
 | # | The claim as published | Where | Marked |
 |---|---|---|---|
-| D1 | Photograph of Luis Novella, self-hosted at `assets/people/luis-novella.jpg` | `index.html` | |
-| D2 | "Thirty years across energy, cybersecurity, insurance, FinTech and consulting... Senior roles at KPMG, Accenture, The Hackett Group and Areva. Chartered Director and FIoD." | `index.html` | |
+| D1 | Photograph of Luis Novella, self-hosted at `assets/people/luis-novella.jpg` | `index.html` | **Confirmed, Luis, 8 Oct 2026** |
+| D2 | "Thirty years across energy, cybersecurity, insurance, FinTech and consulting... Senior roles at KPMG, Accenture, The Hackett Group and Areva. Chartered Director and FIoD." | `index.html` | **Confirmed, Luis, 8 Oct 2026** |
 | D3 | The role label **"Founding member"** | `index.html` | |
 | D4 | Link to his personal LinkedIn profile | `index.html` | |
 
@@ -136,13 +136,12 @@ makes the label carry more weight than it would in a list of ten.
 
 | # | The claim as published | Where | Marked |
 |---|---|---|---|
-| E1 | Two photographs from the GTA Global Summit, Istanbul, 7 October 2026 | `/news`, home page `#news`, social card | |
+| E1 | Two photographs from the GTA Global Summit, Istanbul, 7 October 2026 | `/news`, home page `#news`, social card | **Confirmed, 8 Oct 2026: taken on Luis's phone, used with his permission** |
 | E2 | Russ Shaw CBE named and pictured, captioned as founder of Global Tech Advocates | `/news`, home page `#news` | |
 | E3 | "GTA Cyber launched in Istanbul on 7 October 2026" (banner) and "founding member Luis Novella" (article) | `index.html`, `news.html` | |
 
-**E1: who took them?** They arrived via WhatsApp, so the photographer is unknown here. If it
-was the summit's official photographer or HİB's team, they may want a credit line, and the
-organisers may have their own approved set. A credit in the caption is a one-line change.
+**E1 is resolved.** Both photos were taken on Luis Novella's phone and are used with his
+permission. No third-party credit is needed.
 
 **E2 is low risk** (a public figure, on stage, at a public event, captioned factually), but
 he is the person you are sending this site to, so it costs nothing to mention it.
@@ -174,8 +173,8 @@ and someone has agreed to enforce it.
 | A. Sponsor terms | | | |
 | B. Governance | | | |
 | C. Data handling | | | |
-| D. Luis Novella's details | | | |
-| E. Summit photographs | | | |
+| D. Luis Novella's details | Luis Novella | 2026-10-08 | D1 photo and D2 bio confirmed. D3 label and D4 LinkedIn link not yet explicitly confirmed |
+| E. Summit photographs | Luis Novella | 2026-10-08 | E1 confirmed. E2 (Russ) and E3 (launch date wording) open |
 
 Once all three are signed, delete the `X-Robots-Tag: noindex` block from `_headers` and
 this gate is cleared.

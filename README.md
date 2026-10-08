@@ -376,7 +376,8 @@ starting in the right place avoids that entirely.
 
 Cloudflare Pages, connected to this repository, building from the root with no build
 command. Custom domains `gta-cyber.org` added through the Pages **Custom domains** UI
-so Pages creates the DNS records itself. Never hand-build the CNAME; doing so without
+so Pages creates the DNS records itself. The Cloudflare zones sit in an account that is
+clear for handoff, matching the separate GitHub organisation. Never hand-build the CNAME; doing so without
 registering the domain in Pages first produces a 522.
 
 `gta-cyber.com` is a defensive registration and redirects to the apex of `.org` via a
@@ -384,5 +385,7 @@ Cloudflare redirect rule. It serves no content and sends no mail.
 
 ## Attribution
 
-Logo artwork supplied by Global Tech Advocates. The Klarvant wordmark is used with
+Logo artwork supplied directly by Global Tech Advocates for use on this site; GTA Cyber
+did not create it and should not alter it. Summit photographs in `assets/news/` were taken
+on Luis Novella's phone and are used with his permission. The Klarvant wordmark is used with
 permission as title sponsor, taken from their published brand assets.
