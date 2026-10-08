@@ -66,7 +66,7 @@ First session: a webinar on post-quantum readiness, early December 2026. Date, s
 and registration to be announced. Open to everyone across the Global Tech Advocates
 network, not only security specialists.
 
-Ongoing: monthly practitioner calls, quarterly deep-dive roundtables, policy response
+Ongoing, small and periodic: practitioner calls, quarterly deep-dive roundtables, policy response
 sessions convened when a consultation has a real deadline, and security strands
 contributed to
 events run by other GTA groups.

@@ -2,10 +2,19 @@
   var toggle = document.getElementById('navToggle');
   var panel = document.getElementById('navPanel');
   if (toggle && panel) {
-    toggle.addEventListener('click', function () {
-      var open = panel.classList.toggle('open');
+    var setOpen = function (open) {
+      panel.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Open menu';
+    };
+    toggle.addEventListener('click', function () {
+      setOpen(!panel.classList.contains('open'));
+    });
+    panel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel.classList.contains('open')) { setOpen(false); toggle.focus(); }
     });
   }
 
@@ -76,7 +85,8 @@
       el.classList.add('reveal-stagger');
     });
     document.querySelectorAll('main section > .wrap').forEach(function (el) {
-      if (!el.closest('.reveal-stagger')) el.classList.add('reveal');
+      if (el.closest('.reveal-stagger, .hero, .launch, .phero')) return;
+      el.classList.add('reveal');
     });
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {

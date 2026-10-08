@@ -34,15 +34,14 @@ These describe a commercial agreement. Highest risk in the file.
 | A2 | "No editorial control, no member list, no lead generation" (title sponsor tier) | `partners.html:106` | |
 | A3 | "You can walk away. **Annual terms, no multi-year lock-in**, and we will say so publicly and without rancour if a partnership ends." | `partners.html:146` | |
 | A4 | "You do not get speaking slots by default." | `partners.html:144` | |
-| A5 | "buys no member list, no editorial control and **no guaranteed speaking slots**" | `partners.html:7` and `:12` | |
+| ~~A5~~ | ~~"buys no member list, no editorial control and no guaranteed speaking slots" in the meta description~~ **Removed** when the description was shortened to fit search results (October 2026). The same claims remain in the page body as A1, A2 and A4. | `partners.html` | **Resolved** |
 | A6 | "that support buys no editorial control. Guidance published by the community stays vendor-neutral, **including in the categories Klarvant competes in**." | `partners.html:85` | |
 | A7 | "Invitation to the annual practitioner roundtable" (title and programme tiers) | `partners.html:105`, `:116` | |
 | A8 | "One partner, annual commitment" / "A small number, annual commitment" | `partners.html:101`, `:112` | |
 | A9 | "Sponsorship does not buy the membership list, editorial control, or guaranteed speaking slots." | `llms.txt:80` | |
 
-**A5 is the urgent one.** It is the meta description, so it is what appears in Google
-results and in the preview card when anyone shares the partners page in Slack, LinkedIn
-or email. It reaches people who never open the page.
+**A5 no longer applies.** The meta description no longer carries sponsor terms, so they no
+longer appear in Google results or link previews. They still appear on the page itself.
 
 **A6 names Klarvant specifically** as a company whose products the community will not
 endorse. Defensible as an integrity position, and genuinely to their credit if they
@@ -66,7 +65,7 @@ Decisions for the group to take. The website currently announces them as already
 | B3 | "**No selling into the membership.** Sponsors fund the programme. They do not get a list, a lead-gen pipeline, or a speaking slot dressed up as a session." | `about.html:117` | |
 | B4 | "**Vendor-neutral by default.** Guidance published by the community names categories and practices rather than products, including our sponsors' products." | `about.html:118` | |
 | B5 | "**Practitioners set the agenda.** What the community works on is decided by the people doing the work, not by whoever is funding it that year." | `about.html:119` | |
-| B6 | "monthly practitioner calls, quarterly deep-dive roundtables" | `llms.txt:67`, `events.html:7`, `:12` | |
+| B6 | "Periodic" practitioner calls and "Quarterly" deep-dive roundtables (cadence corrected October 2026 from "monthly" and "small and often") | `events.html` timeline, `llms.txt` | |
 
 **B1 and B2 are a confidentiality undertaking**, not a tone-of-voice choice. Chatham
 House has a specific meaning and people will rely on it when deciding what to say in a

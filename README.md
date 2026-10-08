@@ -139,6 +139,28 @@ carry none. Nothing in the output should reference internal notes or tooling.
 self-hosted in `assets/partners/`, not hotlinked. The only external origin the browser
 contacts is `formspree.io`, and only on form submission.
 
+**No inline `style=""` attributes, ever.** The site ships a strict Content-Security-Policy
+(`default-src 'none'`, `style-src 'self'`, `script-src 'self'`), so an inline style is
+silently ignored by the browser and the layout breaks with no error you would notice.
+Use the `u-*` utility classes at the end of `styles.css` (`u-mt12`, `u-muted`, `u-row`
+and so on), or add a new one. They carry `!important` deliberately, to reproduce the
+precedence the old inline styles had; they were converted from 60 inline attributes with
+a computed-style comparison showing zero visual difference. Setting styles from
+JavaScript via `el.style.x = ...` is fine, the CSP does not block that.
+
+**The CSP allows exactly one external origin**, `formspree.io`, in `connect-src` and
+`form-action`. If the form moves to a same-origin Pages Function, change both to
+`'self'` and the site will contact no third party at all. JSON-LD blocks are data, not
+scripts, and are unaffected.
+
+**The mobile menu closes itself** when a link inside it is tapped, and on Escape. On the
+home page the links are in-page anchors, so nothing navigates away; without this the
+panel stayed open over half the screen and the page appeared not to move.
+
+**Above-the-fold content does not animate in.** `.hero`, `.launch` and `.phero` are
+excluded from the reveal effect in `site.js`, so the first thing a visitor sees is never
+starting at zero opacity.
+
 **`no-transform` on every HTML route** in `_headers`. It stops Cloudflare injecting its
 JS Detections script into the served markup. The site uses extensionless URLs, so each
 route needs its own entry; `/*.html` alone does not cover `/about`.
