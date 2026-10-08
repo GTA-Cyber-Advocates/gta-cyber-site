@@ -15,6 +15,7 @@ LinkedIn: https://www.linkedin.com/company/gta-cyber
 ├── about.html            The model and principles
 ├── focus-areas.html      Four subjects, two mechanisms, and what it will not do
 ├── events.html           Programme and rhythm
+├── news.html             Announcements, newest first
 ├── partners.html         Sponsorship tiers and terms
 ├── get-involved.html     Enquiry form
 ├── security-policy.html  Vulnerability disclosure policy
@@ -34,6 +35,8 @@ LinkedIn: https://www.linkedin.com/company/gta-cyber
     ├── gta-cyber-logo-light.png  Light lockup, footer
     ├── og-image.png              1200x630 social card
     ├── favicon.ico / -32 / -512 / apple-touch-icon
+    ├── news/                     Article photos, 800 and 1600 wide, plus a 1200x630 social card
+    ├── people/                   Member headshots
     └── partners/klarvant.png     Self-hosted sponsor logo
 ```
 
@@ -286,6 +289,33 @@ Lowest contrast in this component is 7.59:1, against an AA requirement of 4.5.
 Publishing someone's photograph and career history is a commitment about a real person.
 See section D of `COMMITMENTS.md`.
 
+## News
+
+`/news` holds every announcement on one page, newest first, each as an `<article>` with
+its own `id` so it can be linked directly (`/news#istanbul-2026`). The home page `#news`
+block teases only the latest item, in different words from the article (the
+no-duplication rule applies here too). The launch banner links to that block.
+
+To add an item:
+
+1. Put photos in `assets/news/` as `<slug>-800.jpg` and `<slug>-1600.jpg`, JPEG quality
+   80, and check them for location metadata before committing. The Istanbul photos had
+   none, but phone photos sent any route other than WhatsApp often do.
+2. Add a new `<article class="article" id="<slug>">` at the **top** of the `/news` main
+   section, above the previous one, and update the `NewsArticle` JSON-LD in the head (or
+   add a second one).
+3. Rewrite the home page `#news` card for the new item, in its own words.
+4. Update `<lastmod>` for `/news` in `sitemap.xml` and add a line to `llms.txt`.
+5. If the article names or shows a person, log it in `COMMITMENTS.md`.
+
+**Write news from the record, not from memory.** The Istanbul piece is built only from the
+published summit programme and what the photographs show. It names who was on stage and
+which session it was, and deliberately does not say what anyone said. Add quotes only
+once the speaker has approved them.
+
+The webinar now appears in **four** places that must move together: the launch banner,
+the home page events block, the `/events` page and `llms.txt`.
+
 ## Launch banner
 
 The yellow strip above the hero on the home page (`.launch`) announces that the group
@@ -327,9 +357,7 @@ The copy deliberately avoids quoting one country's dates for that reason.
 ## Events
 
 The first session is a **webinar on post-quantum readiness, early December 2026**, with
-date, speakers and registration to be announced. It appears in three places that must be
-kept in step: the launch banner on the home page, the "Our first session" block on
-`/events`, and `llms.txt`. Update all three, or the site contradicts itself.
+date, speakers and registration to be announced. See the News section above for every place it appears.
 
 ## The hero motif
 

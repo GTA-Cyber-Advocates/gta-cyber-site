@@ -60,6 +60,13 @@ Two standing mechanisms, distinct from the subjects above:
 Certify or accredit anyone. Compete with its own members for work. Run an incident
 response service. Publish threat intelligence as a product.
 
+## News
+
+7 October 2026: GTA Cyber launched at the GTA Global Summit in Istanbul, the first GTA
+Global Summit held in Türkiye. Founding member Luis Novella introduced the group on the
+opening day, on stage with Global Tech Advocates founder Russ Shaw CBE, in the summit's
+working groups session. https://gta-cyber.org/news
+
 ## Events
 
 First session: a webinar on post-quantum readiness, early December 2026. Date, speakers

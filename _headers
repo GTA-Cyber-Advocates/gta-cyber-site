@@ -19,6 +19,9 @@
 /events
   Cache-Control: public, max-age=0, must-revalidate, no-transform
 
+/news
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+
 /partners
   Cache-Control: public, max-age=0, must-revalidate, no-transform
 
@@ -44,6 +47,9 @@
   Cache-Control: public, max-age=2592000
 
 /assets/people/*
+  Cache-Control: public, max-age=2592000
+
+/assets/news/*
   Cache-Control: public, max-age=2592000
 
 /assets/gta-cyber-logo.png

@@ -24,7 +24,7 @@ domain is attached.
 
 ---
 
-## A. Sponsor terms — needs Klarvant, and whoever holds the relationship
+## A. Sponsor terms: needs Klarvant, and whoever holds the relationship
 
 These describe a commercial agreement. Highest risk in the file.
 
@@ -54,7 +54,7 @@ is inventing one.
 
 ---
 
-## B. Governance and operating norms — needs GTA central, or whoever chairs this
+## B. Governance and operating norms: needs GTA central, or whoever chairs this
 
 Decisions for the group to take. The website currently announces them as already taken.
 
@@ -79,7 +79,7 @@ norm and is being repeated rather than invented.
 
 ---
 
-## C. Data handling — needs whoever will actually receive the enquiries
+## C. Data handling: needs whoever will actually receive the enquiries
 
 | # | The claim as published | Where | Marked |
 |---|---|---|---|
@@ -106,7 +106,7 @@ submissions on its own infrastructure.
 
 ---
 
-## D. A named individual — needs Luis, and nobody else
+## D. A named individual: needs Luis, and nobody else
 
 The members grid on the home page publishes a real person's photograph, career history
 and LinkedIn link. That is personal data about an identifiable individual, put on a
@@ -132,16 +132,35 @@ makes the label carry more weight than it would in a list of ten.
 
 **Nothing here needs GTA central.** This one is a conversation with one person.
 
+## E. Summit photographs: needs the photographer, and a nod from Russ
+
+| # | The claim as published | Where | Marked |
+|---|---|---|---|
+| E1 | Two photographs from the GTA Global Summit, Istanbul, 7 October 2026 | `/news`, home page `#news`, social card | |
+| E2 | Russ Shaw CBE named and pictured, captioned as founder of Global Tech Advocates | `/news`, home page `#news` | |
+| E3 | "GTA Cyber launched in Istanbul on 7 October 2026" (banner) and "founding member Luis Novella" (article) | `index.html`, `news.html` | |
+
+**E1: who took them?** They arrived via WhatsApp, so the photographer is unknown here. If it
+was the summit's official photographer or HİB's team, they may want a credit line, and the
+organisers may have their own approved set. A credit in the caption is a one-line change.
+
+**E2 is low risk** (a public figure, on stage, at a public event, captioned factually), but
+he is the person you are sending this site to, so it costs nothing to mention it.
+
+**E3 replaced an earlier unconfirmed claim.** The banner previously said "launched in
+September 2026", which nobody had confirmed. It now uses the Istanbul date, which the
+published programme supports.
+
 ## What to do with each outcome
 
-**Confirmed** — leave as is. Note who confirmed it and when, at the bottom of this file,
+**Confirmed**: leave as is. Note who confirmed it and when, at the bottom of this file,
 so the next person does not reopen it.
 
-**Reworded** — send the replacement wording. Several of these appear in two or three
+**Reworded**: send the replacement wording. Several of these appear in two or three
 places including meta descriptions and `llms.txt`, so every change has to be applied
 everywhere at once or the site contradicts itself. The Where column lists all locations.
 
-**Struck** — the copy is removed. Removing a promise does not leave a hole: the
+**Struck**: the copy is removed. Removing a promise does not leave a hole: the
 sponsorship page still works if it says what sponsors get and stays quiet on what they
 do not, and it is straightforward to add the firewall language later, once it is real
 and someone has agreed to enforce it.
@@ -156,6 +175,7 @@ and someone has agreed to enforce it.
 | B. Governance | | | |
 | C. Data handling | | | |
 | D. Luis Novella's details | | | |
+| E. Summit photographs | | | |
 
 Once all three are signed, delete the `X-Robots-Tag: noindex` block from `_headers` and
 this gate is cleared.
